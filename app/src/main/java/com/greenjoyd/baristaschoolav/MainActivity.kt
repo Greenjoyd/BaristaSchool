@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
         setContentView(bindingClass.root)
+
 
         bindingClass.helloText.text = "Здравствуйте!"
 
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SelectActivity::class.java)
             startActivity(intent)
 
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
     }
 }

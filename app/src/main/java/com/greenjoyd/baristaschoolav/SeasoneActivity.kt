@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.greenjoyd.baristaschoolav.databinding.ActivitySeasoneBinding
+import com.greenjoyd.baristaschoolav.season.Cold
+import com.greenjoyd.baristaschoolav.season.Raf
 
 class SeasoneActivity : AppCompatActivity() {
 
@@ -12,18 +14,20 @@ class SeasoneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         bindingClass = ActivitySeasoneBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_seasone)
         setContentView(bindingClass.root)
 
-        bindingClass.raf.setOnClickListener{
-            val intent = Intent(this,raf::class.java)
+
+
+        bindingClass.raf.setOnClickListener {
+            val intent = Intent(this, Raf::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
-        bindingClass.cold.setOnClickListener{
-            val intent = Intent(this,cold::class.java)
+        bindingClass.cold.setOnClickListener {
+            val intent = Intent(this, Cold::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
     }
-
 
 }

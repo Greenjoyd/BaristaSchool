@@ -22,12 +22,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/espresso"
@@ -38,16 +39,11 @@
                     app:srcCompat="@drawable/espresso" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/americano"
@@ -58,15 +54,11 @@
                     app:srcCompat="@drawable/americano" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/cappuccino"
@@ -78,16 +70,11 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/latte"
@@ -98,15 +85,11 @@
                     app:srcCompat="@drawable/latte" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/flat"

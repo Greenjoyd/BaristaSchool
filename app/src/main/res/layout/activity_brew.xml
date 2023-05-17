@@ -20,7 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,19 +31,18 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/brewratio" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/brewView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Brew"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
+
     <com.yandex.mobile.ads.banner.BannerAdView
         android:id="@+id/bannerAdView"
         android:layout_width="320dp"

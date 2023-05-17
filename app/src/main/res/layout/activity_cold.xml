@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#393f44"
-    tools:context=".cold">
+    tools:context=".season.Cold">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -38,8 +38,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#191717"
                     android:elevation="24dp"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/coldphoto" />
+                    android:scaleType="centerInside" />
             </LinearLayout>
 
             <TextView
@@ -82,12 +81,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:shadowColor="#000000"
-                android:text="@string/coldBrew"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>
+
     <com.yandex.mobile.ads.banner.BannerAdView
         android:id="@+id/bannerAdView"
         android:layout_width="320dp"

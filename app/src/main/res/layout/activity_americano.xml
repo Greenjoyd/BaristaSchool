@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#393f44"
-    tools:context=".Americano">
+    tools:context=".classic.Americano">
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +19,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,6 +29,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:padding="16dp"
                 android:layout_width="fill_parent"
                 android:layout_height="300dp"
                 android:orientation="horizontal"
@@ -39,15 +44,10 @@
                     android:backgroundTint="#191717"
                     android:elevation="24dp"
                     android:scaleType="centerInside"
-                    app:srcCompat="@drawable/americanophoto" />
+                     />
 
             </LinearLayout>
 
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -74,15 +74,10 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
+                android:padding="16dp"
                 android:id="@+id/americanoTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/americano"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -94,5 +89,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
