@@ -28,6 +28,11 @@ class SeasoneActivity : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
+        bindingClass.bumble.setOnClickListener {
+            val intent = Intent(this, Bumble::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+        }
     }
 
 }

@@ -191,4 +191,17 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
         _coffeeMachine.value = repository.getDrinkText("coffeeMachine")
         _coffeeMachineImage.value = repository.getDrinkImage("coffeeMachine")
     }
+
+    private val _bumble = MutableLiveData<String>()
+    val bumble: MutableLiveData<String>
+        get() = _bumble
+
+    private val _bumbleImage = MutableLiveData<Drawable>()
+    val bumbleImage : MutableLiveData<Drawable>
+        get() = _bumbleImage
+
+    fun updateBumble(){
+        _bumble.value = repository.getDrinkText("bumble")
+        _bumbleImage.value = repository.getDrinkImage("bumble")
+    }
 }

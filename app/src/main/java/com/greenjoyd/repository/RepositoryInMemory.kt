@@ -19,7 +19,8 @@ private val drinkMap: Map<String, Int> = mapOf(
     "geyser" to R.string.Mocca,
     "hario" to R.string.Hario,
     "coffeeMachine" to R.string.machine,
-    "pour" to R.string.pour
+    "pour" to R.string.pour,
+    "bumble" to R.string.bumble
 )
 
 private val imageMap: Map<String, Int> = mapOf(
@@ -36,7 +37,8 @@ private val imageMap: Map<String, Int> = mapOf(
     "geyser" to R.drawable.mocca,
     "hario" to R.drawable.hariophoto,
     "coffeeMachine" to R.drawable._023_04_19_16_48_51,
-    "pour" to R.drawable.pour
+    "pour" to R.drawable.pour,
+    "bumble" to R.drawable.bumble
 )
 
 fun getDrinkText(drinkKey: String): String? {

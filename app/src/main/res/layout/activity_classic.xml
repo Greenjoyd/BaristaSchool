@@ -7,98 +7,88 @@
     android:background="#393f44"
     tools:context=".Classic">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
+        <!-- Верхняя пара картинок -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
+            <!-- Картинка 1 (слева) -->
+            <ImageView
+                android:id="@+id/espresso"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/espressobuttonphoto" />
 
-                <ImageButton
-                    android:id="@+id/espresso"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/espresso" />
-            </LinearLayout>
+            <!-- Картинка 2 (справа) -->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/americano"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/americano" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/cappuccino"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/cappuccino" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/latte"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/latte" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/flat"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/flat" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/americano"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/americanobuttonphoto" />
         </LinearLayout>
-    </ScrollView>
+
+        <!-- Средняя пара картинок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Картинка 3 (слева) -->
+            <ImageView
+                android:id="@+id/cappuccino"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/capuchbuttonphoto" />
+
+            <!-- Картинка 4 (справа) -->
+            <ImageView
+                android:id="@+id/latte"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/lattebuttonphot" />
+        </LinearLayout>
+
+        <!-- Нижняя пара картинок -->
+        <LinearLayout
+            android:id="@+id/flat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Картинка 5 (слева) -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/flatbuttonphoto" />
+
+            <!-- Картинка 6 (справа) -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,7 +54,7 @@
                     android:background="#292d32"
                     android:scaleType="centerInside"
 
-                    app:srcCompat="@drawable/seasone" />
+                    app:srcCompat="@drawable/seazon" />
 
             </LinearLayout>
 

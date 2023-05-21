@@ -7,86 +7,71 @@
     android:background="#393f44"
     tools:context=".Alternative">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
+        <!-- Верхняя пара картинок -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
+            <!-- Картинка 1 (слева) -->
+            <ImageView
+                android:id="@+id/franch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/frenchbuttonphoto" />
 
-                <ImageButton
-                    android:id="@+id/franch"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/french" />
-            </LinearLayout>
+            <!-- Картинка 2 (справа) -->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/gayser"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/gayser" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/cemecs"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#292d32"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/cemecs" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-
-                <ImageButton
-                    android:id="@+id/hario"
-                    android:background="#292d32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/hario" />
-            </LinearLayout>
-
+            <ImageView
+                android:id="@+id/gayser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/moccabuttonphoto" />
         </LinearLayout>
-    </ScrollView>
+
+        <!-- Средняя пара картинок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Картинка 3 (слева) -->
+            <ImageView
+                android:id="@+id/chemex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/chemexbuttonphoto" />
+
+            <!-- Картинка 4 (справа) -->
+            <ImageView
+                android:id="@+id/hario"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/hariobuttonphoto" />
+        </LinearLayout>
+
+        <!-- Нижняя пара картинок -->
+        <LinearLayout
+            android:id="@+id/bumble"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

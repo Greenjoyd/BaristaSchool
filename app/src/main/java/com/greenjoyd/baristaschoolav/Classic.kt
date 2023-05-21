@@ -13,6 +13,8 @@ class Classic : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityClassicBinding.inflate(layoutInflater)
+
+
         setContentView(bindingClass.root)
 
         bindingClass.espresso.setOnClickListener {
