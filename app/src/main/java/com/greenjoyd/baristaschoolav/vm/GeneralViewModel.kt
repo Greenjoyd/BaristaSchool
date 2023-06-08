@@ -55,7 +55,7 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
         get() = _flat
 
     private val _flatImage = MutableLiveData<Drawable>()
-    val flatImage : MutableLiveData <Drawable>
+    val flatImage: MutableLiveData<Drawable>
         get() = _flatImage
 
     fun updateFlat() {
@@ -64,12 +64,12 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
     }
 
     private val _latte = MutableLiveData<String>()
-    val latte : MutableLiveData<String>
+    val latte: MutableLiveData<String>
         get() = _latte
 
 
     private val _latteImage = MutableLiveData<Drawable>()
-    val latteImage : MutableLiveData<Drawable>
+    val latteImage: MutableLiveData<Drawable>
         get() = _latteImage
 
     fun updateLatte() {
@@ -78,11 +78,11 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
     }
 
     private val _raf = MutableLiveData<String>()
-    val raf : MutableLiveData<String>
+    val raf: MutableLiveData<String>
         get() = _raf
 
     private val _rafImage = MutableLiveData<Drawable>()
-    val rafImage : MutableLiveData<Drawable>
+    val rafImage: MutableLiveData<Drawable>
         get() = _rafImage
 
     fun updateRaf() {
@@ -91,11 +91,11 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
     }
 
     private val _cold = MutableLiveData<String>()
-    val cold : MutableLiveData<String>
+    val cold: MutableLiveData<String>
         get() = _cold
 
     private val _coldImage = MutableLiveData<Drawable>()
-    val coldImage : MutableLiveData<Drawable>
+    val coldImage: MutableLiveData<Drawable>
         get() = _coldImage
 
     fun updateCold() {
@@ -116,7 +116,7 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
         _brewImage.value = repository.getDrinkImage("brew")
     }
 
-    private val _pour =MutableLiveData<String>()
+    private val _pour = MutableLiveData<String>()
     val pour: MutableLiveData<String>
         get() = _pour
 
@@ -124,7 +124,7 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
     val pourImage: MutableLiveData<Drawable>
         get() = _pourImage
 
-    fun updatePour(){
+    fun updatePour() {
         _pour.value = repository.getDrinkText("pour")
         _pourImage.value = repository.getDrinkImage("pour")
     }
@@ -134,60 +134,62 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
         get() = _chemex
 
     private val _chemexImage = MutableLiveData<Drawable>()
-    val chemexImage : MutableLiveData<Drawable>
+    val chemexImage: MutableLiveData<Drawable>
         get() = _chemexImage
 
-    fun updateChemex(){
+    fun updateChemex() {
         _chemex.value = repository.getDrinkText("chemex")
-        _chemexImage.value= repository.getDrinkImage("chemex")
+        _chemexImage.value = repository.getDrinkImage("chemex")
     }
 
     private val _french = MutableLiveData<String>()
-    val frecnh : MutableLiveData<String>
+    val frecnh: MutableLiveData<String>
         get() = _french
 
     private val _franchImage = MutableLiveData<Drawable>()
-    val franchImage : MutableLiveData<Drawable>
+    val franchImage: MutableLiveData<Drawable>
         get() = _franchImage
 
-    fun updateFrench(){
+    fun updateFrench() {
         _french.value = repository.getDrinkText("french")
         _franchImage.value = repository.getDrinkImage("french")
     }
 
     private val _geyser = MutableLiveData<String>()
-    val geyser : MutableLiveData<String>
+    val geyser: MutableLiveData<String>
         get() = _geyser
 
     private val _geyserImage = MutableLiveData<Drawable>()
-    val geyserImage : MutableLiveData<Drawable>
+    val geyserImage: MutableLiveData<Drawable>
         get() = _geyserImage
 
-    fun updateGeyser(){
+    fun updateGeyser() {
         _geyser.value = repository.getDrinkText("geyser")
         _geyserImage.value = repository.getDrinkImage("geyser")
     }
 
     private val _hario = MutableLiveData<String>()
-    val hario : MutableLiveData<String>
+    val hario: MutableLiveData<String>
         get() = _hario
 
     private val _harioImage = MutableLiveData<Drawable>()
-    val harioImage : MutableLiveData<Drawable>
+    val harioImage: MutableLiveData<Drawable>
         get() = _harioImage
-    fun updateHario(){
+
+    fun updateHario() {
         _hario.value = repository.getDrinkText("hario")
         _harioImage.value = repository.getDrinkImage("hario")
     }
+
     private val _coffeeMachine = MutableLiveData<String>()
-    val coffeeMachine : MutableLiveData<String>
+    val coffeeMachine: MutableLiveData<String>
         get() = _coffeeMachine
 
     private val _coffeeMachineImage = MutableLiveData<Drawable>()
-    val coffeeMachineImage : MutableLiveData<Drawable>
+    val coffeeMachineImage: MutableLiveData<Drawable>
         get() = _coffeeMachineImage
 
-    fun updateCoffeeMachine(){
+    fun updateCoffeeMachine() {
         _coffeeMachine.value = repository.getDrinkText("coffeeMachine")
         _coffeeMachineImage.value = repository.getDrinkImage("coffeeMachine")
     }
@@ -197,11 +199,24 @@ class GeneralViewModel(application: Application) : AndroidViewModel(application)
         get() = _bumble
 
     private val _bumbleImage = MutableLiveData<Drawable>()
-    val bumbleImage : MutableLiveData<Drawable>
+    val bumbleImage: MutableLiveData<Drawable>
         get() = _bumbleImage
 
-    fun updateBumble(){
+    fun updateBumble() {
         _bumble.value = repository.getDrinkText("bumble")
         _bumbleImage.value = repository.getDrinkImage("bumble")
+    }
+
+    private val _rosemary = MutableLiveData<String>()
+    val rosemary: MutableLiveData<String>
+        get() = _rosemary
+
+    private val _rosemaryImage = MutableLiveData<Drawable>()
+    val rosemaryImage: MutableLiveData<Drawable>
+        get() = _rosemaryImage
+
+    fun updateRosemary() {
+        _rosemary.value = repository.getDrinkText("rosemary")
+        _rosemaryImage.value = repository.getDrinkImage("rosemary")
     }
 }

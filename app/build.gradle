@@ -11,8 +11,8 @@ android {
         applicationId "com.greenjoyd.baristaschoolav"
         minSdk 21
         targetSdk 33
-        versionCode 6
-        versionName "1.6"
+        versionCode 8
+        versionName "1.8"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -54,7 +54,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
 
     implementation 'com.yandex.android:mobmetricalib:5.0.0'
-    implementation 'com.yandex.android:mobileads:5.7.0'
+    implementation 'com.yandex.android:mobileads:5.8.0'
     implementation 'com.yandex.ads.adapter:admob-mobileads:5.5.0.0'
 
 }

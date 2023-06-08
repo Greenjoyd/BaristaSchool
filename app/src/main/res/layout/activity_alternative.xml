@@ -36,7 +36,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/moccabuttonphoto" />
+                app:srcCompat="@drawable/moccabuttonphoto1" />
         </LinearLayout>
 
         <!-- Средняя пара картинок -->
@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/hariobuttonphoto" />
+                android:src="@drawable/hariobuttonphoto1" />
         </LinearLayout>
 
         <!-- Нижняя пара картинок -->
